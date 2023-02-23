@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>My Website</title>
+        <link rel="stylesheet" href="css/profile.css"/>
+        
+        <!--Style-->
+        <style>
+            .content {
+                flex-direction: row;
+                display: flex;
+            }
+
+            .content > div {
+                display: flex;
+                flex: 1;
+                align-content: center;
+                justify-content: center;
+            }
+
+            .table_person {
+                border: 10px ridge black;
+            }
+
+            footer > p {
+                text-align: end;
+            }
+        </style>
+    </head>
+
+    <!--Body-->
+
+    <body>
+         <!--header/nav-->
+         <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <img class="logo-revou" src="/asset/logo revou.png"/>
+
+                    <!--Menu Button-->
+                    <div class="menu-button">
+                        <a href="index.html"><button class="Home">Home</button></a>
+                        <a href="profile.html"><button class="My Profile">My Profile</button></a>
+                        <a href="portfolio.html"><button class="Portfolio">Portfolio</button></a>
+                        <a href="messageus.html"><button class="Message Us">Message Us</button></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </body>
+
+    <!--Main Profile-->
+    <main>
+        <section id="profilecontent">
+            <div class="container">
+
+                <div class="profilecontent">
+                    <h1 class="profile-title">Hello, Welcome To The Website</h1>
+
+                    <!--Banner Photo-->
+                    <div class="banner">
+                        <img class="bannerimg" src="/asset/book15.jpg"/>
+                    </div>
+                </div>
+            </div>
+
+            <!--Garis-->
+            <hr class="profile-line"/>
+        </section>
+
+             <!--Our Vission-->
+             <section id="Vission">
+                <div class="container">
+                    <div class="OurVission">
+                        <h1 class="OurV"><b>Our Vission</b></h1>
+                        <p class="Visi-p">Untuk melayani orang-orang, untuk tumbuh bersama masyarakat.</p>
+                    </div>
+
+                        <!--Vission Photo-->
+                        <div class="vis">
+                        <img class="visimg" src="/asset/book1.jpg"/>
+                        </div>
+                </div>
+
+                <!--Our Mission-->
+                <section id="Mission">
+                    <div class="container">
+                        <div class="OurMission">
+                            <h1 class="OurM"><b>Our Mission</b></h1>
+                            <br>
+                            <p class="misi-p">Orang adalah pelanggan kami, alasan keberadaan kami, aset kami.<br>
+                                Objektivitas kami adalah melakukan pendekatan positif melalui partisipasi yang proaktif dan dengan komunikasi yang terbuka.
+                            </p>
+                        </div>
+                    </div>
+
+                        <!--Mission Photo-->
+                        <div class="Mis">
+                            <img class="missmg" src="/asset/book5.jpg"/>
+                        </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <p>Copyright Sharon Silalahi</p>
+                <p class="Paragraph">Revou</p>
+            </div>
+        </div>
+    </footer>
+</html>

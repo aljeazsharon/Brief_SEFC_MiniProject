@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+/* Header style*/
+
+.header {
+    display: fixed;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px 24px;
+   
+}
+
+.header > menu-button {
+    display: flex;
+    background-color: black;
+    padding: 8px 16px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+.navbar {
+    display: flex;
+    border: 2px solid black;
+    justify-content: flex-end;
+} 
+
+.navbar > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 14sp;
+    color: black;
+    background-color: white;
+    display: flex;
+
+}
+
+
+/* Logo */
+.logo-revou {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    width: 40px;
+    height: 40px;
+}
+
+/* Menu Button */
+.menu-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-right: 20px;
+}
+
+/* Welcome Content */
+
+#welcomecontent {
+    background-color: white;
+    margin-top: 10px;
+    padding: 24px;
+}
+
+.welcome-title {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	
+}
+
+.welcomecontent {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.welcome-p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.welcomecontent .form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.welcomecontent .form-section form, 
+.welcomecontent .form-section div {
+    width: 100%;
+}
+
+.banner {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bannerimg {
+    width: 1100px;
+    height: 500px;
+    margin-top: auto;
+}
+
+.welcome-line {
+    border: 1px solid brown;
+    margin-top: 50px;
+}
+
+/* Our Headquarter */
+
+#HQ {
+    margin-top: 70px;
+    margin-bottom: 100px
+}   
+
+.OurHQ {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.HQCity {
+    font-weight: 700;
+    font-size: 30px
+}
+
+.Gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    gap: 60px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.HQLocation {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+}
+/* Message Us */
+#messageus {
+    margin-top: 70px;
+    margin-bottom: 100px
+}   
+
+.OurMessage {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+/* Footer */
+
+.footer {
+    background: whitesmoke;
+    padding: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+}
+
+.Paragraph {
+    margin-left: auto;
+}
+
+/*Media Queries */ 
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar a{
+        padding: 5px 10px 0px 10px;
+        font-size: 15px;
+    }
+
+    #welcomecontent {
+        margin-top: 130px;
+    }
+
+    .welcome-p {
+        font-size: 20px;
+    }
+
+    .welcome-title {
+        font-size: 10px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .welcome-line {
+        margin-top: 35px;
+    }
+
+    .header {
+      flex-direction: column;
+      width: 50px;
+      height: 50%;
+    }
+
+    .bannerimg {
+        flex-direction: column;
+      }
+    
+    .bannerimg img {
+        height: 50px;
+		width: 50%;
+      }
+    
+    .logo-revou {
+        margin-bottom: 14px;
+      }
+
+    #HQ {
+        margin-top: 35px;
+        margin-bottom: 50px;
+
+    }
+
+    .Gallery {
+		flex-direction: row;
+	}
+    
+	.Gallery img {
+		height: 50px;
+		width: 100%;
+	}
+  }
